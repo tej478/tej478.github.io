@@ -1,0 +1,24 @@
+b) Substitution Cipher<br>
+PROGRAM:<br>
+import java.util.Scanner;<br>
+public class substitutionCipher{<br>
+public static void main(String[] args) {<br>
+Scanner sc=new Scanner(System.in);<br>
+// TODO Auto-generated method stub<br>
+String a="abcdefghijklmnopqrstuvwxyz";<br>
+String b="zyxwvutsrqponmlkjihgfedcba";<br>
+String text=sc.nextLine();<br>
+String encrypted="";<br>
+String decrypted="";<br>
+for(int i=0;i<text.length();i++)<br>
+encrypted=encrypted+b.charAt(a.indexOf(text.charAt(i)));<br>
+System.out.println("the encrpytion is:"+encrypted);<br>
+for(int i=0;i<text.length();i++)<br>
+decrypted= decrypted+a.charAt(b.indexOf(encrypted.charAt(i)));<br>
+System.out.println("the decryptred is:"+decrypted);<br>
+}<br>
+}<br>
+Output:<br>
+hello<br>
+the encrpytion is:svool<br>
+the decryptred is:hello<br>
