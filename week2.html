@@ -1,0 +1,56 @@
+a)AND
+#include<stdio.h>
+int main()
+{
+char* source="Hello World";
+char destination;
+printf("%s\n",source);
+while(*source)
+{
+destination= *source & '127';
+printf("%c",destination);
+source++;
+}
+return 0;
+}
+Output:
+Hello World
+%$$' #'2$$
+2b)OR
+Program:
+#include<stdio.h>
+int main()
+{
+char* source="Hello World";
+char destination;
+printf("%s\n",source);
+while(*source)
+{
+destination= *source | '127';
+printf("%c ",destination);
+source++;
+}
+return 0;
+}
+output:
+Hello World
+ w    7 w  w  w
+2c)XOR:
+Program:
+#include<stdio.h>
+int main()
+{
+char* source="Hello World";
+char destination;
+printf("%s\n",source);
+while(*source)
+{
+destination= *source ^ (char)127 ;
+printf("%c ",destination);
+source++;
+}
+return 0;
+}
+output:
+Hello World
+ # #
