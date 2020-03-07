@@ -1,56 +1,56 @@
-a)AND
-#include<stdio.h>
-int main()
-{
-char* source="Hello World";
-char destination;
-printf("%s\n",source);
-while(*source)
-{
-destination= *source & '127';
-printf("%c",destination);
-source++;
-}
-return 0;
-}
-Output:
-Hello World
-%$$' #'2$$
-2b)OR
-Program:
-#include<stdio.h>
-int main()
-{
-char* source="Hello World";
-char destination;
-printf("%s\n",source);
-while(*source)
-{
-destination= *source | '127';
-printf("%c ",destination);
-source++;
-}
-return 0;
-}
-output:
-Hello World
- w    7 w  w  w
-2c)XOR:
-Program:
-#include<stdio.h>
-int main()
-{
-char* source="Hello World";
-char destination;
-printf("%s\n",source);
-while(*source)
-{
-destination= *source ^ (char)127 ;
-printf("%c ",destination);
-source++;
-}
-return 0;
-}
-output:
-Hello World
+a)AND<br>
+#include<stdio.h><br>
+int main()<br>
+{<br>
+char* source="Hello World";<br>
+char destination;<br>
+printf("%s\n",source);<br>
+while(*source)<br>
+{<br>
+destination= *source & '127';<br>
+printf("%c",destination);<br>
+source++;<br>
+}<br>
+return 0;<br>
+}<br>
+Output:<br>
+Hello World<br>
+%$$' #'2$$<br>
+2b)OR<br>
+Program:<br>
+#include<stdio.h><br>
+int main()<br>
+{<br>
+char* source="Hello World";<br>
+char destination;<br>
+printf("%s\n",source);<br>
+while(*source)<br>
+{<br>
+destination= *source | '127';<br>
+printf("%c ",destination);<br>
+source++;<br>
+}<br>
+return 0;<br>
+}<br>
+output:<br>
+Hello World<br>
+ w    7 w  w  w<br>
+2c)XOR:<br>
+Program:<br>
+#include<stdio.h><br>
+int main()<br>
+{<br>
+char* source="Hello World";<br>
+char destination;<br>
+printf("%s\n",source);<br>
+while(*source)<br>
+{<br>
+destination= *source ^ (char)127 ;<br>
+printf("%c ",destination);<br>
+source++;<br>
+}<br>
+return 0;<br>
+}<br>
+output:<br>
+Hello World<br>
  # #
